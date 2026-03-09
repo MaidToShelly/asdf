@@ -153,6 +153,7 @@ flowchart TD
 | ASDF-0014 | Capability Authority Resolution | Draft |
 | ASDF-0015 | Stream Composition and Pipe Semantics | Draft |
 | ASDF-0016 | Managed Resource Model | Draft |
+| ASDF-0017 | Execution Trace Model | Draft |
 
 ---
 
