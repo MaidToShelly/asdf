@@ -1,16 +1,54 @@
 # ASDF — Agent Skill Discovery Format
 
-ASDF is an open standard for discovering, composing, and executing deterministic AI agent skills.
+ASDF is an open standard for **agent-readable repositories**, **portable skill definitions**, and **deterministic automation workflows**.
 
-It defines:
+It provides a unified format that allows AI agents to discover project context, invoke typed actions, query structured state, and execute multi-step strategies through runtime adapters such as MCP.
 
-• Agent repository discovery  
-• Portable skill references (`asdf://`)  
-• Deterministic strategy workflows  
-• Skill capability permissions  
-• Skill interface definitions  
+## The Problem
 
-The goal is to enable portable agent ecosystems where natural language intent is converted into deterministic execution.
+Agent frameworks today rely on fragmented repository conventions — `.cursorrules`, `CLAUDE.md`, `AGENTS.md`, `CONTRIBUTING.md` — each with different formats and no shared semantics. There is no standard way to define portable skills, compose deterministic workflows, or resolve execution across runtimes.
+
+ASDF replaces this fragmentation with a **single canonical file**:
+
+```
+ASDF.md
+```
+
+Compatibility shims are generated so existing tools continue to work, but `ASDF.md` is the source of truth.
+
+## What ASDF Enables
+
+- **Agent discovery** — a single canonical context file per repository
+- **Portable skill definitions** — typed actions with `asdf://` URIs
+- **State views** — structured, read-only queries for runtime data
+- **Deterministic strategy DSL** — ordered workflows composing skills and views
+- **Provider abstraction** — logical providers decoupled from runtime implementations
+- **Runtime execution** — adapters for MCP, APIs, plugins, and simulations
+
+## Architecture
+
+```
+Strategy
+   ↓
+Skills + State Views
+   ↓
+Provider Resolution
+   ↓
+Runtime Adapter
+   ↓
+Execution Backend (MCP / API / Plugin)
+```
+
+## Core Concepts
+
+| Concept | Purpose |
+|---------|---------|
+| Skill | Action an agent can perform |
+| State View | Read-only query for structured data |
+| Strategy | Deterministic multi-step workflow |
+| Provider | Logical protocol or service reference |
+| Runtime Adapter | Concrete execution backend (e.g. MCP) |
+| Capability | Permission required to execute a skill or view |
 
 ---
 
