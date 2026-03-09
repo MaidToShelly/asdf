@@ -36,3 +36,15 @@ This repository uses `ASDF.md` as the canonical agent-readable project context f
 To support existing agent frameworks, lightweight compatibility files are included at the repository root, such as `.cursorrules`, `CLAUDE.md`, `AGENTS.md`, and `CONTRIBUTING.md`.
 
 These files are adapters only and point back to `ASDF.md` as the source of truth.
+
+---
+
+## Cursor Compatibility
+
+This repository includes native support for Cursor agent discovery.
+
+Cursor will automatically load rules from:
+
+`.cursor/rules`
+
+The rules file directs Cursor agents to `ASDF.md`, which serves as the canonical agent-readable repository context.

@@ -1,0 +1,14 @@
+This repository follows the **ASDF (Agent Skill Discovery Format)**.
+
+Start with:
+
+ASDF.md
+
+ASDF.md defines the canonical agent-readable project context including:
+
+- project structure
+- agent conventions
+- skill discovery
+- strategy DSL usage
+
+All agents interacting with this repository should begin by reading `ASDF.md`.
