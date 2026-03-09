@@ -25,6 +25,7 @@ The goal is to enable portable agent ecosystems where natural language intent is
 | ASDF-0007 | Skill Interface Definition |
 | ASDF-0008 | Skill Capability Model |
 | ASDF-0009 | MCP Binding Specification |
+| ASDF-0010 | Provider Resolution |
 
 Status: Draft
 
