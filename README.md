@@ -48,3 +48,49 @@ Cursor will automatically load rules from:
 `.cursor/rules`
 
 The rules file directs Cursor agents to `ASDF.md`, which serves as the canonical agent-readable repository context.
+
+---
+
+## CLI
+
+The `asdf` CLI provides tooling for working with ASDF repositories.
+
+### Install
+
+```
+npm install
+npm run build
+```
+
+### `asdf init`
+
+Scaffold an ASDF-ready repository structure:
+
+```
+npx asdf init
+```
+
+This generates:
+
+| File | Purpose |
+|------|---------|
+| `ASDF.md` | Canonical agent-readable project context |
+| `.cursorrules` | Cursor compatibility (legacy) |
+| `.cursor/rules` | Cursor compatibility (modern) |
+| `CLAUDE.md` | Claude Code compatibility |
+| `AGENTS.md` | OpenClaw / Codex compatibility |
+| `CONTRIBUTING.md` | Contributor and Copilot Workspace compatibility |
+| `examples/hello.strategy` | Example strategy file |
+| `examples/example.ASDF.md` | Example ASDF context file |
+| `specs/` | Directory for specification documents |
+| `examples/` | Directory for examples |
+
+Options:
+
+| Flag | Description |
+|------|-------------|
+| `--name <name>` | Project name for templates (default: directory name) |
+| `--force` | Overwrite existing files |
+| `--help` | Show help |
+
+Existing files are preserved unless `--force` is passed.

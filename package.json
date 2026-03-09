@@ -1,0 +1,20 @@
+{
+  "name": "asdf-cli",
+  "version": "0.1.0",
+  "description": "CLI for the Agent Skill Discovery Format (ASDF)",
+  "type": "module",
+  "bin": {
+    "asdf": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/cli.js"
+  },
+  "keywords": ["asdf", "agent", "skill", "discovery"],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}

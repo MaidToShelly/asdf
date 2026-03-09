@@ -1,0 +1,8 @@
+strategy hello {
+  step greet {
+    skill: core/hello
+    input: {
+      name: "world"
+    }
+  }
+}
