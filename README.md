@@ -52,6 +52,89 @@ Execution Backend (MCP / API / Plugin)
 
 ---
 
+## Layered Architecture
+
+ASDF, UluOS, and MCP are complementary layers in a unified agent execution stack.
+
+| Layer | Role |
+|-------|------|
+| ASDF Intents | What the user wants |
+| ASDF Strategies | How to do it |
+| ASDF Skills / Views | Atomic capabilities |
+| Providers | Logical routing |
+| UluOS | Runtime / kernel |
+| MCPs | Drivers |
+| Protocols / Chains | External systems |
+
+**ASDF** defines the capability language and strategy model.
+**UluOS** provides the runtime execution environment.
+**MCP** provides concrete execution interfaces.
+
+```
+ASDF = language
+UluOS = runtime
+MCP = drivers
+```
+
+### Stack
+
+```mermaid
+flowchart TD
+  A[User / Agent Request] --> B[ASDF Intent Layer]
+  B --> C[ASDF Strategy Layer]
+  C --> D[ASDF Skills]
+  C --> E[ASDF State Views]
+  D --> F[Provider Resolution]
+  E --> F
+  F --> G[UluOS Runtime]
+  G --> H[MCP Adapters]
+  H --> I[UluWalletMCP]
+  H --> J[UluBroadcastMCP]
+  H --> K[UluCoreMCP]
+  H --> L[UluVoiMCP]
+  H --> M[UluAlgorandMCP]
+  H --> N[UluDorkFiMCP]
+  I --> O[Wallet / Signing]
+  J --> P[Transaction Broadcast]
+  K --> Q[RPC / Indexer / Core Services]
+  L --> R[Voi Protocols]
+  M --> S[Algorand Protocols]
+  N --> T[DorkFi Protocol]
+```
+
+### Layers
+
+**Users / Agents** — Where requests originate. These may be humans, applications, or autonomous agents.
+
+**Intent Layer** — High-level goals expressed using ASDF intents (ASDF-0012).
+
+**Strategy Layer** — Deterministic workflows that convert intents into executable steps (ASDF-0006).
+
+**Skill + View Layer** — Capabilities used by strategies. Skills perform actions (ASDF-0007). Views retrieve read-only state (ASDF-0011).
+
+**Provider Resolution Layer** — Maps logical providers to concrete implementations (ASDF-0010).
+
+**Runtime Adapter Layer** — Translates ASDF constructs into executable backends. UluOS serves as the runtime kernel.
+
+**MCP Layer** — Concrete execution interfaces such as UluWalletMCP, UluBroadcastMCP, UluCoreMCP, UluVoiMCP, UluAlgorandMCP, and UluDorkFiMCP.
+
+**Protocol / Chain / Service Backends** — Actual systems being interacted with: blockchains, smart contracts, APIs, and services.
+
+### Example Execution
+
+```
+"Maintain my DorkFi position health"
+  → asdf://intent/defi/maintain_health
+  → maintain_health.strategy
+  → views + skills
+  → provider resolution
+  → UluOS runtime
+  → UluDorkFiMCP / UluWalletMCP / UluBroadcastMCP
+  → on-chain execution
+```
+
+---
+
 ## Specifications
 
 | Spec | Title | Status |
