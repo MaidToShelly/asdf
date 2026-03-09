@@ -95,3 +95,17 @@ Options:
 | `--help` | Show help |
 
 Existing files are preserved unless `--force` is passed.
+
+---
+
+## Prompt Library
+
+This repository includes a library of reusable prompts for applying ASDF in real projects using Cursor, Claude Code, and OpenClaw.
+
+The prompts are reference tooling — structured markdown files with clear goals, tasks, constraints, and expected output. They live under `prompts/` and are organized by agent framework:
+
+- `prompts/cursor/` — scaffolding, skill creation, strategy authoring, MCP binding
+- `prompts/claude/` — agent context templates
+- `prompts/openclaw/` — skill generation
+
+See `prompts/README.md` for the full index.
