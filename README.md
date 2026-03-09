@@ -66,6 +66,7 @@ Execution Backend (MCP / API / Plugin)
 | ASDF-0010 | Provider Resolution | Accepted |
 | ASDF-0011 | State View Specification | Accepted |
 | ASDF-0012 | Intent Specification | Draft |
+| ASDF-0013 | Registry Specification | Draft |
 
 ---
 
