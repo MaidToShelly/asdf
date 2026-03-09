@@ -26,3 +26,13 @@ The goal is to enable portable agent ecosystems where natural language intent is
 | ASDF-0008 | Skill Capability Model |
 
 Status: Draft
+
+---
+
+## Compatibility
+
+This repository uses `ASDF.md` as the canonical agent-readable project context file.
+
+To support existing agent frameworks, lightweight compatibility files are included at the repository root, such as `.cursorrules`, `CLAUDE.md`, `AGENTS.md`, and `CONTRIBUTING.md`.
+
+These files are adapters only and point back to `ASDF.md` as the source of truth.

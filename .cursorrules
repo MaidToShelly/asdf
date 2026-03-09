@@ -1,0 +1,6 @@
+This repository follows the ASDF (Agent Skill Discovery Format).
+
+Start with:
+ASDF.md
+
+ASDF defines the canonical agent-readable repository context.
