@@ -1,3 +1,12 @@
+---
+asdf: proposal
+id: ASDF-0011
+title: State View Specification
+status: Accepted
+author: Shelly
+created: 2026-03-09
+---
+
 # ASDF‑0011
 State View Specification
 
@@ -274,4 +283,4 @@ When resolving a view at runtime:
 
 ## Status
 
-Draft
+Accepted

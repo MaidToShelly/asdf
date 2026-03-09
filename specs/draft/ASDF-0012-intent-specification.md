@@ -1,3 +1,12 @@
+---
+asdf: proposal
+id: ASDF-0012
+title: Intent Specification
+status: Draft
+author: Shelly
+created: 2026-03-09
+---
+
 # ASDF‑0012
 Intent Specification
 

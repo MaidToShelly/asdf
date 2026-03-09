@@ -54,20 +54,30 @@ Execution Backend (MCP / API / Plugin)
 
 ## Specifications
 
-| Spec | Description |
-|-----|-----|
-| ASDF-0001 | Agent Skill Discovery Format |
-| ASDF-0002 | Portable Skill References |
-| ASDF-0003 | Metadata Format |
-| ASDF-0006 | Strategy DSL |
-| ASDF-0007 | Skill Interface Definition |
-| ASDF-0008 | Skill Capability Model |
-| ASDF-0009 | MCP Binding Specification |
-| ASDF-0010 | Provider Resolution |
-| ASDF-0011 | State View Specification |
-| ASDF-0012 | Intent Specification |
+| Spec | Title | Status |
+|------|-------|--------|
+| ASDF-0001 | Agent Skill Discovery Format | Accepted |
+| ASDF-0002 | Portable Skill References | Accepted |
+| ASDF-0003 | Metadata Format | Accepted |
+| ASDF-0006 | Strategy DSL | Accepted |
+| ASDF-0007 | Skill Interface Definition | Accepted |
+| ASDF-0008 | Skill Capability Model | Accepted |
+| ASDF-0009 | MCP Binding Specification | Accepted |
+| ASDF-0010 | Provider Resolution | Accepted |
+| ASDF-0011 | State View Specification | Accepted |
+| ASDF-0012 | Intent Specification | Draft |
 
-Status: Draft
+---
+
+## Specification Process
+
+ASDF specifications follow a lifecycle similar to RFCs and EIPs.
+
+```
+Draft → Review → Accepted → Final
+```
+
+New proposals begin as Draft specifications. See `specs/PROCESS.md` for details.
 
 ---
 

@@ -1,3 +1,12 @@
+---
+asdf: proposal
+id: ASDF-0006
+title: Strategy DSL
+status: Accepted
+author: Shelly
+created: 2026-03-09
+---
+
 # ASDF‑0006
 Strategy DSL
 

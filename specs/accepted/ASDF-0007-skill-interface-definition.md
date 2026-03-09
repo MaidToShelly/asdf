@@ -1,3 +1,12 @@
+---
+asdf: proposal
+id: ASDF-0007
+title: Skill Interface Definition
+status: Accepted
+author: Shelly
+created: 2026-03-09
+---
+
 # ASDF‑0007
 Skill Interface Definition
 

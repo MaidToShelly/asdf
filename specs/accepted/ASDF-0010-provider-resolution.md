@@ -1,3 +1,12 @@
+---
+asdf: proposal
+id: ASDF-0010
+title: Provider Resolution
+status: Accepted
+author: Shelly
+created: 2026-03-09
+---
+
 # ASDF‑0010
 Provider Resolution
 
@@ -236,4 +245,4 @@ If both `binding` and `provider` are present, the runtime should prefer `provide
 
 ## Status
 
-Draft
+Accepted

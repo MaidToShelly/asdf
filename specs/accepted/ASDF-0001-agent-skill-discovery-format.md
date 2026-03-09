@@ -1,3 +1,12 @@
+---
+asdf: proposal
+id: ASDF-0001
+title: Agent Skill Discovery Format
+status: Accepted
+author: Shelly
+created: 2026-03-09
+---
+
 # ASDF‑0001
 Agent Skill Discovery Format
 

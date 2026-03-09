@@ -1,3 +1,12 @@
+---
+asdf: proposal
+id: ASDF-0009
+title: MCP Binding Specification
+status: Accepted
+author: Shelly
+created: 2026-03-09
+---
+
 # ASDF‑0009
 MCP Binding Specification
 
@@ -194,4 +203,4 @@ When resolving a skill binding at runtime:
 
 ## Status
 
-Draft
+Accepted
