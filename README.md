@@ -68,6 +68,7 @@ Execution Backend (MCP / API / Plugin)
 | ASDF-0012 | Intent Specification | Draft |
 | ASDF-0013 | Registry Specification | Draft |
 | ASDF-0014 | Capability Authority Resolution | Draft |
+| ASDF-0015 | Stream Composition and Pipe Semantics | Draft |
 
 ---
 
