@@ -65,6 +65,7 @@ Execution Backend (MCP / API / Plugin)
 | ASDF-0009 | MCP Binding Specification |
 | ASDF-0010 | Provider Resolution |
 | ASDF-0011 | State View Specification |
+| ASDF-0012 | Intent Specification |
 
 Status: Draft
 
